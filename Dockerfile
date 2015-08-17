@@ -58,5 +58,5 @@ RUN rm -rf thriftsrc
 
 # Switch to app folder
 WORKDIR $HOME
-RUN mkdir app
-WORKDIR app
+RUN mkdir app appdata
+VOLUME $HOME/appdata
